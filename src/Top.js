@@ -12,13 +12,13 @@ export default function Top() {
             width:'100%',
             flexWrap:'wrap',
         }}>
-            <div style={{margin:'0 3em'}}>
+            <div style={{margin:'0 1.5em'}}>
                 <h1>Emma Lynn Web Development</h1>
                 <h2>Where Development meets Design</h2>
             </div>
             <img
             className='emma-image' 
-            style={{width:'400px'}} 
+            style={{width:'400px',margin:'0 1.5em'}} 
             alt="Emma Lynn" 
             src={emma}/>
         </div>

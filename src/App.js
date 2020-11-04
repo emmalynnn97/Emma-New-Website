@@ -4,6 +4,7 @@ import Top from './Top'
 import CaseStudies from './CaseStudies'
 import Contact from './Contact'
 import BlogPosts from './BlogPosts'
+import Footer from './Footer'
 function App() {
   const emmaPink='#FFF1FC'
   return (
@@ -13,7 +14,7 @@ function App() {
       <CaseStudies/>
       <Contact/>
       <BlogPosts/>
-      <div>Footer</div>
+      <Footer/>
     </div>
   );
 }

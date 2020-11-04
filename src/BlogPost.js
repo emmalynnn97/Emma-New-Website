@@ -38,7 +38,7 @@ export default function BlogPost(props) {
             className='blog-post'
             style={
                 {
-                    height: '350px',
+                    height: '400px',
                     width: '300px',
                     transform: `translateX(${translationX}vw) translateY(${translationY}vh)`,
                     transition: '.75s ease-in-out',
