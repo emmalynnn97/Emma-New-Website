@@ -2,6 +2,8 @@ import './App.css';
 import Nav from './Nav'
 import Top from './Top'
 import CaseStudies from './CaseStudies'
+import Contact from './Contact'
+import BlogPosts from './BlogPosts'
 function App() {
   const emmaPink='#FFF1FC'
   return (
@@ -9,7 +11,8 @@ function App() {
       <Nav/>
       <Top/>
       <CaseStudies/>
-      <div>Contact</div>
+      <Contact/>
+      <BlogPosts/>
       <div>Footer</div>
     </div>
   );

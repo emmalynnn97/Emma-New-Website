@@ -1,6 +1,13 @@
 import React from 'react'
-import { useState, useEffect} from 'react'
-export default function CaseStudy(props) {
+import { useState, useEffect } from 'react'
+export default function BlogPost(props) {
+    const btnStyle={
+        border:'2px solid black',
+        padding:'.35em 1.25em',
+        margin:'.35em 0',
+        cursor:'pointer'
+    }
+    const emmaPink = '#FFF1FC'
     const isElementXPercentInViewport = function (el, percentVisible) {
         let
             rect = el.getBoundingClientRect(),
@@ -16,7 +23,7 @@ export default function CaseStudy(props) {
     
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            var cStudyContainers = document.querySelectorAll('.case-study-container');
+            var cStudyContainers = document.querySelectorAll('.blog-posts-container');
             cStudyContainers.forEach((cStudyContainer)=>{
                 if (isElementXPercentInViewport(cStudyContainer, 50)) {
                     setTranslationX(0)
@@ -26,19 +33,12 @@ export default function CaseStudy(props) {
             
         })
     })
-    const emmaPink = '#FFF1FC'
-    const btnStyle={
-        border:'2px solid black',
-        padding:'.35em 1.25em',
-        margin:'.35em 0',
-        cursor:'pointer'
-    }
     return (
         <div
-            className='case-study'
+            className='blog-post'
             style={
                 {
-                    height: '450px',
+                    height: '350px',
                     width: '300px',
                     transform: `translateX(${translationX}vw) translateY(${translationY}vh)`,
                     transition: '.75s ease-in-out',

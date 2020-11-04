@@ -2,6 +2,8 @@ import React from 'react'
 import CaseStudy from './CaseStudy'
 export default function CaseStudies() {
     return (
+        <>
+        <h2 style={{background:'white', textAlign:'center'}}>Case Studies</h2>
         <div
             className='case-study-container'
             style={{ 
@@ -24,5 +26,6 @@ export default function CaseStudies() {
                 title='Website Refresh'
                 initialOffset={{x:100, y:0}} />
         </div>
+        </>
     )
 }
