@@ -1,0 +1,18 @@
+*::before, *::after, *{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+@media (max-width:480px){
+  .emma-image{
+    width:250px !important;
+  }
+  .top-container{
+    height:45vh !important;
+  }
+  .case-study{
+    margin:1em 0 !important;
+    height:425px !important;
+    width:275px !important;
+  }
+}
