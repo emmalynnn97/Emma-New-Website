@@ -1,5 +1,5 @@
 import React from 'react'
-import emma from './emma.JPG'
+import emmaIllustration from './emma-website-illustration.png'
 export default function Top() {
     return (
         <div
@@ -20,7 +20,7 @@ export default function Top() {
             className='emma-image' 
             style={{width:'400px',margin:'0 1.5em'}} 
             alt="Emma Lynn" 
-            src={emma}/>
+            src={emmaIllustration}/>
         </div>
     )
 }

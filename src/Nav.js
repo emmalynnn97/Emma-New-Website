@@ -8,7 +8,8 @@ export default function Nav() {
         cursor:'pointer'
     }
     return (
-        <div 
+        <div
+        className='nav' 
         style={{
             height:'75px', 
             width:'100%',

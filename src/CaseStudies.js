@@ -8,7 +8,7 @@ export default function CaseStudies() {
             className='case-study-container'
             style={{ 
                 padding: '3em 0', 
-                background: 'white', 
+                background: '#FFF1FC', 
                 width: '100%', 
                 overflow: 'hidden', 
                 display: 'flex', 

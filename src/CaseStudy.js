@@ -11,7 +11,7 @@ export default function CaseStudy(props) {
             Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
         )
     };
-    const [translationX, setTranslationX] = useState(props.initialOffset.x);
+    const [translationX, setTranslationX] = useState(props.initialOffset.x)
     const [translationY, setTranslationY] = useState(props.initialOffset.y)
     
     useEffect(() => {
@@ -23,7 +23,6 @@ export default function CaseStudy(props) {
                     setTranslationY(0)
                 }
             })
-            
         })
     })
     const emmaPink = '#FFF1FC'
