@@ -26,12 +26,6 @@ export default function CaseStudy(props) {
             })
         })
     })
-    const btnStyle={
-        border:'2px solid black',
-        padding:'.35em 1.25em',
-        margin:'.35em 0',
-        cursor:'pointer'
-    }
     return (
         <div
             className='case-study'

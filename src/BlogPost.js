@@ -2,12 +2,6 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import ButtonSecondary from './ButtonSecondary'
 export default function BlogPost(props) {
-    const btnStyle={
-        border:'2px solid black',
-        padding:'.35em 1.25em',
-        margin:'.35em 0',
-        cursor:'pointer'
-    }
     const emmaPink = '#FFF1FC'
     const isElementXPercentInViewport = function (el, percentVisible) {
         let
