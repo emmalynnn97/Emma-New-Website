@@ -3,7 +3,7 @@ import axios from 'axios'
 const useContactForm = () => {
     const [inputs, setInputs] = useState({
       firstName: '',
-      lastName: '',
+      email:'',
       subject: '',
       message: ''
     });
