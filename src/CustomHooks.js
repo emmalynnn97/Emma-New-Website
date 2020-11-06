@@ -12,7 +12,7 @@ const useContactForm = () => {
     }
     const handleSubmit = (event) => {
       event.preventDefault()
-      axios.post('localhost:5001/contact', inputs)
+      axios.post('http://localhost:5001/contact', inputs)
         .then(response=>console.log(response))
         .catch(error=>console.log(error))
     }
