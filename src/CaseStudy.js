@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect} from 'react'
+import ButtonSecondary from './ButtonSecondary'
 export default function CaseStudy(props) {
     const isElementXPercentInViewport = function (el, percentVisible) {
         let
@@ -18,14 +19,13 @@ export default function CaseStudy(props) {
         window.addEventListener('scroll', () => {
             var cStudyContainers = document.querySelectorAll('.case-study-container');
             cStudyContainers.forEach((cStudyContainer)=>{
-                if (isElementXPercentInViewport(cStudyContainer, 50)) {
+                if (isElementXPercentInViewport(cStudyContainer, 40)) {
                     setTranslationX(0)
                     setTranslationY(0)
                 }
             })
         })
     })
-    const emmaPink = '#FFF1FC'
     const btnStyle={
         border:'2px solid black',
         padding:'.35em 1.25em',
@@ -42,7 +42,7 @@ export default function CaseStudy(props) {
                     transform: `translateX(${translationX}vw) translateY(${translationY}vh)`,
                     transition: '.75s ease-in-out',
                     margin: '1em 3em',
-                    background: emmaPink,
+                    background: 'white',
                 }
             }>
             <div
@@ -70,7 +70,7 @@ export default function CaseStudy(props) {
                 <p style={{lineHeight:'1.35'}}>
                     {props.description}
                 </p>
-                <span style={btnStyle}>View</span>
+                <ButtonSecondary text='view'/>
             </div>
         </div>
     )

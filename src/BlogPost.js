@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import ButtonSecondary from './ButtonSecondary'
 export default function BlogPost(props) {
     const btnStyle={
         border:'2px solid black',
@@ -25,7 +26,7 @@ export default function BlogPost(props) {
         window.addEventListener('scroll', () => {
             var cStudyContainers = document.querySelectorAll('.blog-posts-container');
             cStudyContainers.forEach((cStudyContainer)=>{
-                if (isElementXPercentInViewport(cStudyContainer, 50)) {
+                if (isElementXPercentInViewport(cStudyContainer, 40)) {
                     setTranslationX(0)
                     setTranslationY(0)
                 }
@@ -71,7 +72,7 @@ export default function BlogPost(props) {
                 <p style={{lineHeight:'1.35'}}>
                     {props.description}
                 </p>
-                <span style={btnStyle}>View</span>
+                <ButtonSecondary text='view'/>
             </div>
         </div>
     )

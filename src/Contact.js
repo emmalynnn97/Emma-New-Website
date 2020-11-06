@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contact() {
     return (
-            <div style={{ width: '100%', height: '33vh'}}>
+            <div style={{ width: '100%', height: '33vh', background:'#f3f3f3'}}>
                 <form style={{ background:'pink', display: 'flex', alignItems: 'center', justifyContent:'center', flexDirection: 'column', height: '100%', width:'70%', margin:'0 auto', position:'relative', top:'-1.5em' }}>
                     <h2 style={{ textAlign: 'center' }}>Contact</h2>
                     <div style={{ display: 'flex' }}>
