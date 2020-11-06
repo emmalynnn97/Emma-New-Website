@@ -1,33 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import ButtonSecondary from './ButtonSecondary'
+import useSlideIn from './useSlideIn'
 export default function BlogPost(props) {
     const emmaPink = '#FFF1FC'
-    const isElementXPercentInViewport = function (el, percentVisible) {
-        let
-            rect = el.getBoundingClientRect(),
-            windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-
-        return !(
-            Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / +-(rect.height / 1)) * 100)) < percentVisible ||
-            Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
-        )
-    };
-    const [translationX, setTranslationX] = useState(props.initialOffset.x);
-    const [translationY, setTranslationY] = useState(props.initialOffset.y)
-    
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            var cStudyContainers = document.querySelectorAll('.blog-posts-container');
-            cStudyContainers.forEach((cStudyContainer)=>{
-                if (isElementXPercentInViewport(cStudyContainer, 40)) {
-                    setTranslationX(0)
-                    setTranslationY(0)
-                }
-            })
-            
-        })
-    })
+    const { translationX, translationY } = useSlideIn({x:0, y:100, containerClass:'blog-posts-container'})
     return (
         <div
             className='blog-post'
