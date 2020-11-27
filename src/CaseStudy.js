@@ -1,17 +1,16 @@
 import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
-import useSlideIn from './useSlideIn'
+import  useSlideIn  from './useSlideIn'
 export default function CaseStudy(props) {
-    const { translationX, translationY} = useSlideIn({x:0, y:100, containerClass:'case-study-container'})
+    const itemRef = useSlideIn({ itemOffsetY:20, itemTransition:'.3s ease-in-out' })
     return (
         <div
+            ref = { itemRef }
             className='case-study'
             style={
                 {
                     height: '450px',
                     width: '300px',
-                    transform: `translateX(${translationX}vw) translateY(${translationY}vh)`,
-                    transition: '.75s ease-in-out',
                     margin: '1em 3em',
                     background: 'white',
                 }

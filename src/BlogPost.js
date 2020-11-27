@@ -3,20 +3,20 @@ import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './useSlideIn'
 export default function BlogPost(props) {
     const emmaPink = '#FFF1FC'
-    const { translationX, translationY } = useSlideIn({x:0, y:100, containerClass:'blog-posts-container'})
+    const itemRef = useSlideIn({ itemOffsetY:15, itemTransition:'.3s ease-in-out' })
     return (
         <div
+            ref = { itemRef }
             className='blog-post'
             style={
                 {
                     height: '400px',
                     width: '300px',
-                    transform: `translateX(${translationX}vw) translateY(${translationY}vh)`,
-                    transition: '.75s ease-in-out',
                     margin: '1em 3em',
                     background: emmaPink,
                 }
-            }>
+            }
+        >
             <div
                 style={{
                     backgroundImage: `url(${props.image})`,
@@ -24,7 +24,8 @@ export default function BlogPost(props) {
                     backgroundPosition: 'center',
                     width: '100%',
                     height: '50%',
-                }}>
+                }}
+            >
             </div>
             <div
                 style={{
@@ -35,7 +36,8 @@ export default function BlogPost(props) {
                     flexDirection:'column',
                     alignItems:'flex-start',
                     justifyContent:'flex-start'
-                }}>
+                }}
+            >
                 <h3 style={{ margin: '.35em 0'}}>
                     {props.title}
                 </h3>
