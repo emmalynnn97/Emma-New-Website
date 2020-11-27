@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './useSlideIn'
-export default function BlogPost(props) {
+const BlogPost = ({ image, title, description }) => {
     const emmaPink = '#FFF1FC'
     const itemRef = useSlideIn({ itemOffsetY:15, itemTransition:'.3s ease-in-out' })
     return (
@@ -19,7 +19,7 @@ export default function BlogPost(props) {
         >
             <div
                 style={{
-                    backgroundImage: `url(${props.image})`,
+                    backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     width: '100%',
@@ -39,13 +39,14 @@ export default function BlogPost(props) {
                 }}
             >
                 <h3 style={{ margin: '.35em 0'}}>
-                    {props.title}
+                    {title}
                 </h3>
                 <p style={{lineHeight:'1.35'}}>
-                    {props.description}
+                    {description}
                 </p>
                 <ButtonSecondary text='view'/>
             </div>
         </div>
     )
 }
+export default BlogPost

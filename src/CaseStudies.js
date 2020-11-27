@@ -19,17 +19,17 @@ export default function CaseStudies() {
                 description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
                 image='https://imgix.cosmicjs.com/315afb00-c73d-11ea-b44f-f5c7da208e23-business-code-coding-computer-270360.jpg'
                 title='Custom WordPress Site'
-                initialOffset={{x:-100, y:0}} />
+                 />
                 <CaseStudy
                 description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
                 image='https://imgix.cosmicjs.com/315afb00-c73d-11ea-b44f-f5c7da208e23-business-code-coding-computer-270360.jpg'
                 title='Custom WordPress Site'
-                initialOffset={{x:0, y:100}} />
+                 />
             <CaseStudy
                 description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ' 
                 image='https://imgix.cosmicjs.com/4a02ad30-a2d3-11ea-a53d-43d1307482f8-joshua-aragon-FkjaN-7gWC0-unsplash-1.jpg'
                 title='Website Refresh'
-                initialOffset={{x:100, y:0}} />
+                />
         </div>
         </>
     )
