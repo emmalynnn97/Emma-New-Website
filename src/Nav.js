@@ -1,6 +1,6 @@
 import React from 'react'
 import NavLink from './NavLink'
-export default function Nav() {
+const Nav = () => {
     return (
         <div
         className='nav' 
@@ -20,3 +20,4 @@ export default function Nav() {
         </div>
     )
 }
+export default Nav

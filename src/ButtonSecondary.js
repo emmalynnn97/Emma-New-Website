@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-export default function ButtonSecondary(props) {
+const ButtonSecondary = ({ text }) => {
     const [bgColor, setBgColor] = useState('inherit')
     return (
         <button 
@@ -16,7 +16,8 @@ export default function ButtonSecondary(props) {
             cursor:'pointer',
             transition:'.2s ease'
         }}>
-            {props.text}
+            {text}
         </button>
     )
 }
+export default ButtonSecondary

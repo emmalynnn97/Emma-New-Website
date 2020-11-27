@@ -1,7 +1,7 @@
 import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
-import  useSlideIn  from './useSlideIn'
-export default function CaseStudy(props) {
+import  useSlideIn  from './hooks/useSlideIn'
+const CaseStudy = ({ image, title, description }) => {
     const itemRef = useSlideIn({ itemOffsetY:20, itemTransition:'.3s ease-in-out' })
     return (
         <div
@@ -17,7 +17,7 @@ export default function CaseStudy(props) {
             }>
             <div
                 style={{
-                    backgroundImage: `url(${props.image})`,
+                    backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     width: '100%',
@@ -35,13 +35,14 @@ export default function CaseStudy(props) {
                     justifyContent:'flex-start'
                 }}>
                 <h3 style={{ margin: '.35em 0'}}>
-                    {props.title}
+                    {title}
                 </h3>
                 <p style={{lineHeight:'1.35'}}>
-                    {props.description}
+                    {description}
                 </p>
                 <ButtonSecondary text='view'/>
             </div>
         </div>
     )
 }
+export default CaseStudy

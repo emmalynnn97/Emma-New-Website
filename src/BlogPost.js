@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
-import useSlideIn from './useSlideIn'
+import useSlideIn from './hooks/useSlideIn'
 const BlogPost = ({ image, title, description }) => {
     const emmaPink = '#FFF1FC'
     const itemRef = useSlideIn({ itemOffsetY:15, itemTransition:'.3s ease-in-out' })

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-export default function NavLink(props) {
+const NavLink = ({ text }) => {
     const [bgColor, setBgColor] = useState('inherit')
     return (
         <span
@@ -20,7 +20,8 @@ export default function NavLink(props) {
         transition:'.2s ease',
         textAlign:'center',
         }}>
-            {props.text}
+            {text}
         </span>
     )
 }
+export default NavLink

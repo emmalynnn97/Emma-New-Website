@@ -1,7 +1,7 @@
 import React from 'react'
 import emmaIllustration from './emma-website-illustration.png'
 import TopCopy from './TopCopy'
-export default function Top() {
+const Top = () => {
     return (
         <div
         className='top-container' 
@@ -26,3 +26,4 @@ export default function Top() {
         </div>
     )
 }
+export default Top

@@ -1,7 +1,7 @@
 import React from 'react'
 import { ReactComponent as Git } from './git-logo.svg'
 import { ReactComponent as Linkedin } from './linkedin.svg'
-export default function Footer() {
+const Footer = () => {
     return (
         <div style={{
             height:'100px',
@@ -18,3 +18,4 @@ export default function Footer() {
         </div>
     )
 }
+export default Footer

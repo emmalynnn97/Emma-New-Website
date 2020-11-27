@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-export default function ButtonPrimary(props) {
+const ButtonPrimary = ( { text } ) => {
     const [bgColor, setBgColor] = useState('#FFB9F0')
     return (
         <button 
@@ -17,7 +17,8 @@ export default function ButtonPrimary(props) {
             cursor:'pointer',
             transition:'.2s ease',
         }}>
-            {props.text}
+            {text}
         </button>
     )
 }
+export default ButtonPrimary
