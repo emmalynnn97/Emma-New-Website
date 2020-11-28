@@ -3,12 +3,12 @@ import CaseStudy from './CaseStudy'
 const CaseStudies = () => {
     return (
         <>
-        <h2 style={{background:'white', textAlign:'center'}}>Case Studies</h2>
+        <h2 style={{ textAlign:'center' }}>Case Studies</h2>
         <div
             className='case-study-container'
             style={{ 
                 padding: '3em 0', 
-                background: '#FFF1FC', 
+                background: '#fdf', 
                 width: '100%', 
                 overflow: 'hidden', 
                 display: 'flex', 

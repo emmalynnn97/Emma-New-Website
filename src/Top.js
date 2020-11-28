@@ -1,7 +1,9 @@
 import React from 'react'
 import emmaIllustration from './emma-website-illustration.png'
 import TopCopy from './TopCopy'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 const Top = () => {
+    const isMobile = useMediaQuery('(max-width:500px)')
     return (
         <div
         className='top-container' 
@@ -16,11 +18,14 @@ const Top = () => {
             <TopCopy 
             heading='Emma Lynn Web Development' 
             subheading='Where development meets design'
-            body='I am a front end developer with 1.5 years of experience producing visually appealing websites using HTML5, CSS3, ES5/ES6 JavaScript, PHP7, and React. Some of my recent projects include WooCommerce and Shopify powered Ecommerce Stores.'
+            body='I am a front end engineer with 2+ years experience producing visually appealing, client facing web applications and user interfaces.'
             />
             <img
             className='emma-image' 
-            style={{width:'400px',margin:'0 1.5em'}} 
+            style={{
+                width:!isMobile ? '400px' : '275px',
+                margin:'0 1em'
+            }} 
             alt="Emma Lynn Web Development illustration" 
             src={emmaIllustration}/>
         </div>

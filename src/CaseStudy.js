@@ -1,17 +1,19 @@
 import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
 import  useSlideIn  from './hooks/useSlideIn'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 const CaseStudy = ({ image, title, description }) => {
     const itemRef = useSlideIn({ itemOffsetY:20, itemTransition:'.3s ease-in-out' })
+    const isDesktop = !useMediaQuery('(max-width:500px)')
     return (
         <div
             ref = { itemRef }
             className='case-study'
             style={
                 {
-                    height: '450px',
-                    width: '300px',
-                    margin: '1em 3em',
+                    height: isDesktop ? 450 : 425,
+                    width: isDesktop ? 300 : '80%',
+                    margin: isDesktop ? '1em 3em' : '1em 0',
                     background: 'white',
                 }
             }>

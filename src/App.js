@@ -6,9 +6,9 @@ import Contact from './Contact'
 import BlogPosts from './BlogPosts'
 import Footer from './Footer'
 function App() {
-  const emmaGray = '#f3f3f3'
+  const emmaPink = '#FFF1FC'
   return (
-    <div style={{background:emmaGray}} className="App">
+    <div style={{background:emmaPink}} className="App">
       <Nav/>
       <Top/>
       <CaseStudies/>

@@ -1,9 +1,16 @@
 import React from 'react'
 import ButtonPrimary from './ButtonPrimary'
 import ButtonSecondary from './ButtonSecondary'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 const TopCopy = ({ heading, subheading, body }) => {
+    const isDesktop = !useMediaQuery('(max-width:500px)')
     return (
-        <div className='top-copy-container' style={{margin:'0 1.5em', width:'50%'}}>
+        <div 
+        className='top-copy-container' 
+        style={{
+            margin:'0 1.5em', 
+            width:isDesktop ? '50%' : 'auto'
+        }}>
                 <h1 
                     className='top-heading' 
                     style={{fontSize:'2.5em'}}>

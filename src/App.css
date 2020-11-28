@@ -14,35 +14,11 @@ form > div > div > input{
   .nav{
     justify-content: center !important;
   }
-  .top-copy-container{
-    width:80% !important;
-  }
 }
-@media (max-width:480px){
-  .emma-image{
-    width:250px !important;
-  }
-  .top-container{
-    height:75vh !important;
-  }
-  .case-study{
-    margin:1em 0 !important;
-    height:425px !important;
-    width:275px !important;
-  }
+@media (max-width:500px){
+ 
   .blog-post{
     margin:1em 0 !important;
-  }
-  .nav{
-    justify-content: center !important;
-    padding:0px !important;
-  }
-  .top-copy-container{
-    width:100% !important;
-  }
-  .nav-link{
-    padding:.5em .75em !important;
-    font-size:1em !important;
   }
   .top-heading{
     font-size:2em !important;
@@ -52,9 +28,6 @@ form > div > div > input{
   }
   .footer-tagline{
     font-size:1em !important;
-  }
-  form{
-    width:100% !important;
   }
   .footer-tagline,.footer-icon-container{
     margin:0 auto !important;
