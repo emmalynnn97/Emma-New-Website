@@ -1,24 +1,24 @@
 import React from 'react'
 import { useState } from 'react'
-const ButtonPrimary = ( { text } ) => {
+const ButtonPrimary = ({ text }) => {
     const [bgColor, setBgColor] = useState('#FFB9F0')
     return (
-        <button 
-        onMouseEnter={() => setBgColor('inherit')} 
-        onMouseLeave={() => setBgColor('#FFB9F0')} 
-        style={{
-            backgroundColor:bgColor,
-            outline:'none',
-            border:'2px solid #FFB9F0',
-            padding:'.5em 1.25em',
-            textTransform:'uppercase',
-            borderRadius:'15px',
-            marginRight:'1em',
-            cursor:'pointer',
-            transition:'.2s ease',
-        }}>
+        <a href='/#contact'><button
+            onMouseEnter={() => setBgColor('inherit')}
+            onMouseLeave={() => setBgColor('#FFB9F0')}
+            style={{
+                backgroundColor: bgColor,
+                outline: 'none',
+                border: '2px solid #FFB9F0',
+                padding: '.5em 1.25em',
+                textTransform: 'uppercase',
+                borderRadius: '15px',
+                marginRight: '1em',
+                cursor: 'pointer',
+                transition: '.2s ease',
+            }}>
             {text}
-        </button>
+        </button></a>
     )
 }
 export default ButtonPrimary

@@ -6,28 +6,28 @@ const Top = () => {
     const isMobile = useMediaQuery('(max-width:500px)')
     return (
         <div
-        className='top-container' 
-        style={{
-            display:'flex',
-            height:'75vh',
-            alignItems:'center',
-            justifyContent:'center',
-            width:'100%',
-            flexWrap:'wrap',
-        }}>
-            <TopCopy 
-            heading='Emma Lynn Web Development' 
-            subheading='Where development meets design'
-            body='I am a front end engineer with 2+ years experience producing visually appealing, client facing web applications and user interfaces.'
+            className='top-container'
+            style={{
+                display: 'flex',
+                height: '75vh',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                flexWrap: 'wrap',
+            }}>
+            <TopCopy
+                heading='Emma Lynn Web Development'
+                subheading='Where development meets design'
+                body='I am a full stack software engineer with 3+ years experience producing visually appealing, client facing web applications and user interfaces.'
             />
             <img
-            className='emma-image' 
-            style={{
-                width:!isMobile ? '400px' : '275px',
-                margin:'0 1em'
-            }} 
-            alt="Emma Lynn Web Development illustration" 
-            src={emmaIllustration}/>
+                className='emma-image'
+                style={{
+                    width: !isMobile ? '400px' : '275px',
+                    margin: '0 1em'
+                }}
+                alt="Emma Lynn Web Development illustration"
+                src={emmaIllustration} />
         </div>
     )
 }

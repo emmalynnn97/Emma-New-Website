@@ -8,13 +8,13 @@ import Footer from './Footer'
 function App() {
   const emmaPink = '#FFF1FC'
   return (
-    <div style={{background:emmaPink}} className="App">
-      <Nav/>
-      <Top/>
-      <CaseStudies/>
-      <Contact/>
-    <BlogPosts/>
-      <Footer/>
+    <div style={{ background: emmaPink }} className="App">
+      <Nav />
+      <Top />
+      <CaseStudies />
+      <Contact />
+      <BlogPosts />
+      <Footer />
     </div>
   );
 }

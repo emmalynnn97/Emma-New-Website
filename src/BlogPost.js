@@ -3,10 +3,10 @@ import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './hooks/useSlideIn'
 const BlogPost = ({ image, title, description }) => {
     const emmaPink = '#FFF1FC'
-    const itemRef = useSlideIn({ itemOffsetY:15, itemTransition:'.3s ease-in-out' })
+    const itemRef = useSlideIn({ itemOffsetY: 15, itemTransition: '.3s ease-in-out' })
     return (
         <div
-            ref = { itemRef }
+            ref={itemRef}
             className='blog-post'
             style={
                 {
@@ -28,23 +28,24 @@ const BlogPost = ({ image, title, description }) => {
             >
             </div>
             <div
+                className='post-card'
                 style={{
                     height: '50%',
                     width: '100%',
                     padding: '1em',
-                    display:'flex',
-                    flexDirection:'column',
-                    alignItems:'flex-start',
-                    justifyContent:'flex-start'
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'flex-start',
+                    justifyContent: 'flex-start'
                 }}
             >
-                <h3 style={{ margin: '.35em 0'}}>
+                <h3 style={{ margin: '.35em 0' }}>
                     {title}
                 </h3>
-                <p style={{lineHeight:'1.35'}}>
+                <p style={{ lineHeight: '1.35' }}>
                     {description}
                 </p>
-                <ButtonSecondary text='view'/>
+                <ButtonSecondary text='view' />
             </div>
         </div>
     )

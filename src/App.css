@@ -10,6 +10,21 @@ form > div > div > input{
   height:30px !important;
   padding:1em !important;
 }
+html {
+  scroll-behavior: smooth;
+}
+input[type="submit"]{
+  transition:.25s ease-in-out;
+}
+a{
+  text-decoration:none;
+}
+button:hover, input[type="submit"]:hover{
+  transform:scale(1.06);
+}
+.post-card > button:hover{
+  background:'white'
+}
 @media (max-width:768px){
   .nav{
     justify-content: center !important;

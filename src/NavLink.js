@@ -1,30 +1,32 @@
 import React from 'react'
 import { useState } from 'react'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-const NavLink = ({ text }) => {
+const NavLink = ({ text, link }) => {
     const [bgColor, setBgColor] = useState('inherit')
     const isDesktop = !useMediaQuery('(max-width:500px)')
     return (
-        <span
-        className='nav-link' 
-        onMouseEnter = {() => setBgColor('#FFB9F0')}
-        onMouseLeave = {()=> setBgColor('inherit')}
-        style={{
-        height:'100%',
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
-        padding:isDesktop ? '.5em 2.25em' : '0',
-        cursor:'pointer',
-        fontWeight:'500',
-        fontSize:isDesktop ? '1.25em' : '1em',
-        backgroundColor:bgColor,
-        transition:'.2s ease',
-        textAlign:'center',
-        width:isDesktop ? 'auto' : '25%'
-        }}>
+        <a href={link}><span
+            className='nav-link'
+            onMouseEnter={() => setBgColor('#FFB9F0')}
+            onMouseLeave={() => setBgColor('inherit')}
+            style={{
+                height: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: isDesktop ? '.5em 2.25em' : '0',
+                cursor: 'pointer',
+                fontWeight: '500',
+                fontSize: isDesktop ? '1.25em' : '1em',
+                backgroundColor: bgColor,
+                transition: '.2s ease',
+                textAlign: 'center',
+                margin: isDesktop ? 'auto' : '0 .25em',
+                width: isDesktop ? 'auto' : '100%',
+                color: 'black'
+            }}>
             {text}
-        </span>
+        </span></a>
     )
 }
 export default NavLink
