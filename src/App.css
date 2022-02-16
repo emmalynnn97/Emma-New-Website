@@ -11,12 +11,13 @@ a,button{
   font-family: 'Poppins', sans-serif !important;
   font-weight:500;
 }
-p{
+p, label{
   font-family: 'Open Sans', sans-serif;
 }
 form > div > div > input{
   height:30px !important;
   padding:1em !important;
+  margin:.5em 0;
 }
 html {
   scroll-behavior: smooth;

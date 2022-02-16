@@ -1,8 +1,10 @@
 import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './hooks/useSlideIn'
+
 const BlogPost = ({ image, title, description }) => {
-    const emmaPink = '#FFF1FC'
+
+
     const itemRef = useSlideIn({ itemOffsetY: 15, itemTransition: '.3s ease-in-out' })
     return (
         <div
@@ -10,10 +12,10 @@ const BlogPost = ({ image, title, description }) => {
             className='blog-post'
             style={
                 {
-                    height: '450px',
+                    height: 500,
                     width: '300px',
                     margin: '1em 3em',
-                    background: emmaPink,
+                    backgroundColor: 'rgba(255, 241, 252,.75)',
                 }
             }
         >
@@ -45,7 +47,7 @@ const BlogPost = ({ image, title, description }) => {
                 <p style={{ lineHeight: '1.35' }}>
                     {description}
                 </p>
-                <ButtonSecondary text='view' />
+                <ButtonSecondary text='Read More' />
             </div>
         </div>
     )

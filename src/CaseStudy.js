@@ -11,10 +11,10 @@ const CaseStudy = ({ image, title, description }) => {
             className='case-study'
             style={
                 {
-                    height: isDesktop ? 450 : 425,
+                    height: 500,
                     width: isDesktop ? 300 : '80%',
                     margin: isDesktop ? '1em 3em' : '1em 0',
-                    background: '#FFF1FC',
+                    backgroundColor: 'rgba(255, 241, 252,.75)',
                 }
             }>
             <div
@@ -42,7 +42,7 @@ const CaseStudy = ({ image, title, description }) => {
                 <p style={{ lineHeight: '1.35' }}>
                     {description}
                 </p>
-                <ButtonSecondary text='view' />
+                <ButtonSecondary text='view case study' />
             </div>
         </div>
     )
