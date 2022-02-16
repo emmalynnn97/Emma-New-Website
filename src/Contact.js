@@ -46,7 +46,7 @@ export default function Contact() {
 
                     <div
                         style={{ display: 'flex', flexDirection: 'column' }}>
-                        <label>Subject<span style={{ color: 'red' }}>*</span></label>
+                        <label>Subject <span style={{ color: 'red' }}>*</span></label>
                         <input
                             value={inputs.subject}
                             onChange={handleInputChange}
@@ -57,7 +57,7 @@ export default function Contact() {
                     </div>
                     <div
                         style={{ display: 'flex', flexDirection: 'column' }}>
-                        <label>Message<span style={{ color: 'red' }}>*</span></label>
+                        <label>Message <span style={{ color: 'red' }}>*</span></label>
                         <textarea
                             value={inputs.message}
                             onChange={handleInputChange}
