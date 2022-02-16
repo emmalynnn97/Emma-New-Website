@@ -16,7 +16,7 @@ p, label{
 }
 form > div > div > input{
   height:30px !important;
-  padding:1em !important;
+  padding:1em 0 !important;
   margin:.5em 0;
 }
 html {

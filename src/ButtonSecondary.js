@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const ButtonSecondary = ({ text, link, isRoute }) => {
     const [bgColor, setBgColor] = useState('inherit')
-    console.log(link)
     return (
         <>
             {!isRoute && <a href={link}>
