@@ -28,7 +28,7 @@ const TopCopy = ({ heading, subheading, body }) => {
             </p>
             <div style={{ margin: '1em 0' }}>
                 <ButtonPrimary text='Contact' />
-                <ButtonSecondary text='Case Studies' />
+                <ButtonSecondary link={'/#case-study-top'} text='Case Studies' />
             </div>
         </div>
     )

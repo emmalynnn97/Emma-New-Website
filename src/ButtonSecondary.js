@@ -2,12 +2,12 @@ import React from 'react'
 import { useState } from 'react'
 import { Link } from "react-router-dom";
 
-const ButtonSecondary = ({ text, link }) => {
+const ButtonSecondary = ({ text, link, isRoute }) => {
     const [bgColor, setBgColor] = useState('inherit')
     console.log(link)
     return (
         <>
-            {!link && <a href='/#case-study-top'>
+            {!isRoute && <a href={link}>
                 <button
                     onMouseEnter={() => setBgColor('#FFB9F0')}
                     onMouseLeave={() => setBgColor('inherit')}
@@ -24,7 +24,7 @@ const ButtonSecondary = ({ text, link }) => {
                     }}>
                     {text}
                 </button>
-            </a>} {link && <Link to={link}>
+            </a>} {isRoute && <Link to={link}>
                 <button
                     onMouseEnter={() => setBgColor('#FFB9F0')}
                     onMouseLeave={() => setBgColor('inherit')}

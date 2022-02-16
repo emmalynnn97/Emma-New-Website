@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './hooks/useSlideIn'
 
-const BlogPost = ({ image, title, description }) => {
+const BlogPost = ({ image, title, description, link }) => {
 
 
     const itemRef = useSlideIn({ itemOffsetY: 15, itemTransition: '.3s ease-in-out' })
@@ -47,7 +47,7 @@ const BlogPost = ({ image, title, description }) => {
                 <p style={{ lineHeight: '1.35' }}>
                     {description}
                 </p>
-                <ButtonSecondary text='Read More' />
+                <ButtonSecondary isRoute={false} link={link} text='Read More' />
             </div>
         </div>
     )

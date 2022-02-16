@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function JoyCone() {
   return (
-    <div>JoyCone</div>
+    <div>Work In Progress</div>
   )
 }
 

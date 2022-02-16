@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/JoyCone' element={<JoyCone />}></Route>
+        <Route path='/Whatever' element={<JoyCone />}></Route>
       </Routes>
     </BrowserRouter>
   );

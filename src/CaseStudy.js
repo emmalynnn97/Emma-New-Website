@@ -42,7 +42,7 @@ const CaseStudy = ({ image, title, description, link }) => {
                 <p style={{ lineHeight: '1.35' }}>
                     {description}
                 </p>
-                <ButtonSecondary link={link} text='view case study' />
+                <ButtonSecondary isRoute link={link} text='view case study' />
             </div>
         </div>
     )
