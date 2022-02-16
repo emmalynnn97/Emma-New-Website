@@ -21,6 +21,7 @@ const CaseStudies = () => {
                     description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
                     image='https://imgix.cosmicjs.com/315afb00-c73d-11ea-b44f-f5c7da208e23-business-code-coding-computer-270360.jpg'
                     title='Rebranding the Ice Cream Cone'
+                    link='/JoyCone'
                 />
             </div>
         </>

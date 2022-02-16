@@ -1,21 +1,23 @@
 import './App.css';
-import Nav from './Nav'
-import Top from './Top'
-import CaseStudies from './CaseStudies'
-import Contact from './Contact'
-import BlogPosts from './BlogPosts'
-import Footer from './Footer'
+import Home from './Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import JoyCone from './CaseStudies/JoyCone'
 function App() {
-  const emmaPink = '#FFF1FC'
   return (
-    <div style={{ background: emmaPink }} className="App">
+    /*<div style={{ background: emmaPink }} className="App">
       <Nav />
       <Top />
       <CaseStudies />
       <Contact />
       <BlogPosts />
       <Footer />
-    </div>
+    </div>*/
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/JoyCone' element={<JoyCone />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

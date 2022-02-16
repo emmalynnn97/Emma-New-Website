@@ -2,7 +2,7 @@ import React from 'react'
 import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './hooks/useSlideIn'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-const CaseStudy = ({ image, title, description }) => {
+const CaseStudy = ({ image, title, description, link }) => {
     const itemRef = useSlideIn({ itemOffsetY: 20, itemTransition: '.3s ease-in-out' })
     const isDesktop = !useMediaQuery('(max-width:500px)')
     return (
@@ -42,7 +42,7 @@ const CaseStudy = ({ image, title, description }) => {
                 <p style={{ lineHeight: '1.35' }}>
                     {description}
                 </p>
-                <ButtonSecondary text='view case study' />
+                <ButtonSecondary link={link} text='view case study' />
             </div>
         </div>
     )
