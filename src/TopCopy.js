@@ -18,7 +18,7 @@ const TopCopy = ({ heading, subheading, body }) => {
             </h1>
             <h2
                 className='top-subheading'
-                style={{ fontSize: '1.75em', marginBottom: '.25em' }}>
+                style={{ fontWeight: 500, fontSize: '1.75em', marginBottom: '.25em' }}>
                 {subheading}
             </h2>
             <p
@@ -28,7 +28,7 @@ const TopCopy = ({ heading, subheading, body }) => {
             </p>
             <div style={{ margin: '1em 0' }}>
                 <ButtonPrimary text='Contact' />
-                <ButtonSecondary text='Portfolio' />
+                <ButtonSecondary text='Case Studies' />
             </div>
         </div>
     )

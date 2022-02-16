@@ -7,20 +7,23 @@ const Nav = () => {
         <div
             className='nav'
             style={{
-                height: '70px',
+
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'flex-end',
                 alignItems: 'center',
                 flexWrap: 'wrap',
                 padding: isDesktop ? '0em 1em' : '0',
+                position: 'fixed',
+                backgroundColor: 'rgba(255, 222, 255, .75)',
+                backdropFilter: 'blur(4px)',
+                zIndex: 2
             }}
         >
-            <NavLink text='Home' />
+            <NavLink link='/#top' text='Home' />
             <NavLink link='/#blog' text='Blog' />
             <NavLink link='/#contact' text='Contact' />
             <NavLink link='/#case-study-top' text='Case Studies' />
-            <NavLink text='Portfolio' />
         </div>
     )
 }

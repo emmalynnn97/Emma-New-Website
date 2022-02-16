@@ -6,9 +6,11 @@ const Top = () => {
     const isMobile = useMediaQuery('(max-width:500px)')
     return (
         <div
+            id='#top'
             className='top-container'
             style={{
                 display: 'flex',
+                paddingTop: 70,
                 height: '75vh',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -16,7 +18,7 @@ const Top = () => {
                 flexWrap: 'wrap',
             }}>
             <TopCopy
-                heading='Emma Lynn Web Development'
+                heading='Emma Lynn'
                 subheading='Where development meets design'
                 body='I am a full stack software engineer with 3+ years experience producing visually appealing, client facing web applications and user interfaces.'
             />

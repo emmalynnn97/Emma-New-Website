@@ -10,7 +10,7 @@ const BlogPost = ({ image, title, description }) => {
             className='blog-post'
             style={
                 {
-                    height: '400px',
+                    height: '450px',
                     width: '300px',
                     margin: '1em 3em',
                     background: emmaPink,
@@ -30,7 +30,7 @@ const BlogPost = ({ image, title, description }) => {
             <div
                 className='post-card'
                 style={{
-                    height: '50%',
+                    height: 'auto',
                     width: '100%',
                     padding: '1em',
                     display: 'flex',

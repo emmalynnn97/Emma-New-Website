@@ -28,7 +28,7 @@ const CaseStudy = ({ image, title, description }) => {
             </div>
             <div
                 style={{
-                    height: '50%',
+                    height: 'auto',
                     width: '100%',
                     padding: '1em',
                     display: 'flex',

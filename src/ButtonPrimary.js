@@ -12,7 +12,7 @@ const ButtonPrimary = ({ text }) => {
                 border: '2px solid #FFB9F0',
                 padding: '.5em 1.25em',
                 textTransform: 'uppercase',
-                borderRadius: '15px',
+                borderRadius: '40px',
                 marginRight: '1em',
                 cursor: 'pointer',
                 transition: '.2s ease',

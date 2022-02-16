@@ -10,20 +10,19 @@ const NavLink = ({ text, link }) => {
             onMouseEnter={() => setBgColor('#FFB9F0')}
             onMouseLeave={() => setBgColor('inherit')}
             style={{
-                height: '100%',
+                height: 70,
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
-                padding: isDesktop ? '.5em 2.25em' : '0',
+                padding: isDesktop ? '.5em 2.25em' : '.65em',
                 cursor: 'pointer',
                 fontWeight: '500',
                 fontSize: isDesktop ? '1.25em' : '1em',
                 backgroundColor: bgColor,
                 transition: '.2s ease',
                 textAlign: 'center',
-                margin: isDesktop ? 'auto' : '0 .25em',
                 width: isDesktop ? 'auto' : '100%',
-                color: 'black'
+                color: 'black',
             }}>
             {text}
         </span></a>
