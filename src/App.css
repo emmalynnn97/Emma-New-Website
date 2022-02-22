@@ -37,7 +37,7 @@ button:hover, input[type="submit"]:hover{
   transform:scale(1.06);
 }
 .page{
-  padding-top:100px;
+  padding-top:4em;
 }
 .post-card > button:hover{
   background:'white'
