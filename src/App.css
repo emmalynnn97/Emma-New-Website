@@ -23,7 +23,14 @@ textarea{
   padding:.25em .25em !important;
 
 }
-
+.blog-content h1, .blog-content h2 {
+  margin-left:1em;
+  margin-top:1em;
+}
+.blog-content p{
+  margin-left:2em;
+  margin-top:1em;
+}
 html {
   scroll-behavior: smooth;
 }

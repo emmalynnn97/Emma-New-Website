@@ -17,30 +17,10 @@ const BlogPosts = () => {
                     flexWrap: 'wrap',
                 }}>
                 <BlogPost
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+                    description='I was furloughed recently from a job that I absolutely loved. The culture was wonderful, the mission was admirable, it was remote, and the pay was enough to meet my needs.'
                     image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'
-                    title='Blog Post 1'
-                    link='/whatever'
-                />
-                <BlogPost
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-                    image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'
-                    title='Blog Post 2'
-                />
-                <BlogPost
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-                    image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'
-                    title='Blog Post 2'
-                />
-                <BlogPost
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-                    image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'
-                    title='Blog Post 2'
-                />
-                <BlogPost
-                    description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
-                    image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'
-                    title='Blog Post 2'
+                    title='Can a layoff be a net positive?'
+                    link='/blog/layoff'
                 />
             </div>
         </>

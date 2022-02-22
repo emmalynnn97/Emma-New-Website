@@ -3,7 +3,7 @@ import ButtonSecondary from './ButtonSecondary'
 import useSlideIn from './hooks/useSlideIn'
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 const CaseStudy = ({ image, title, description, link }) => {
-    const itemRef = useSlideIn({ itemOffsetY: 20, itemTransition: '.3s ease-in-out' })
+    const itemRef = useSlideIn({ itemOffsetY: 20, itemTransition: '.25s ease-in-out' })
     const isDesktop = !useMediaQuery('(max-width:500px)')
     return (
         <div

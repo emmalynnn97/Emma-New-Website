@@ -5,14 +5,14 @@ import useSlideIn from './hooks/useSlideIn'
 const BlogPost = ({ image, title, description, link }) => {
 
 
-    const itemRef = useSlideIn({ itemOffsetY: 15, itemTransition: '.3s ease-in-out' })
+    const itemRef = useSlideIn({ itemOffsetX: 15, itemTransition: '.25s ease-in-out' })
     return (
         <div
             ref={itemRef}
             className='blog-post'
             style={
                 {
-                    height: 500,
+                    height: 600,
                     width: '300px',
                     margin: '1em 3em',
                     backgroundColor: 'rgba(255, 241, 252,.75)',
