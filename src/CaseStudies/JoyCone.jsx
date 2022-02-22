@@ -18,7 +18,7 @@ export default function JoyCone() {
         <h1>The Challenge</h1>
        <div className='challenge'>
           <p>Joy Cone's legacy website was not optimized for SEO or mobile. <br/>The client desired a new, more visually appealing website that was optimized for SEO and mobile.</p>
-          <img src="https://imgix.cosmicjs.com/76061d90-93c7-11ec-9a4e-05fc85d83574-Screen-Shot-2022-02-22-at-3.05.11-AM.png" alt="Previous Joy Cone website" />
+            <img src="https://imgix.cosmicjs.com/76061d90-93c7-11ec-9a4e-05fc85d83574-Screen-Shot-2022-02-22-at-3.05.11-AM.png" alt="Previous Joy Cone website" />
        </div>
           
 
@@ -27,7 +27,7 @@ export default function JoyCone() {
         
         <h1>The Solution</h1>
         <div className='solution'>
-        <p>The UI/UX and graphic design team, myself, and our product manager worked together to produce a custom WordPress theme and website. <br/>This new website was optimized for SEO by our marketing department.<br/>The combination of a performant, modern website and the marketing teams's SEO optimizations dramatically increased organic traffic to the Joy Cone website.</p>
+        <p>The UI/UX and graphic design team, myself as the lead engineer, and our product manager worked together to produce a custom WordPress theme and website. <br/>This new website was optimized for SEO by our marketing department.<br/>The combination of a performant, modern website and the marketing teams's SEO optimizations dramatically increased organic traffic to the Joy Cone website.</p>
         <img src="https://cdn.cosmicjs.com/75fc80a0-93c7-11ec-9a4e-05fc85d83574-joy.png" alt="New Joy Cone website" />
         </div>
       </div>

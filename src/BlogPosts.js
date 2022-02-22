@@ -18,7 +18,7 @@ const BlogPosts = () => {
                 }}>
                 <BlogPost
                     description='I was furloughed recently from a job that I absolutely loved. The culture was wonderful, the mission was admirable, it was remote, and the pay was enough to meet my needs.'
-                    image='https://imgix.cosmicjs.com/ebe9b000-ad49-11ea-8ffe-4bdcca0409c6-background-bloom-blooming-blossom-583850.jpg'
+                    image='https://cdn.cosmicjs.com/589ab840-93d3-11ec-9a4e-05fc85d83574-pexels-energepiccom-313690.jpg'
                     title='Can a layoff be a net positive?'
                     link='/blog/layoff'
                 />

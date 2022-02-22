@@ -21,9 +21,11 @@ const Nav = () => {
             }}
         >
             <NavLink link='/#top' text='Home' />
-            <NavLink link='/#blog' text='Blog' />
-            <NavLink link='/#contact' text='Contact' />
             <NavLink link='/#case-study-top' text='Case Studies' />
+            <NavLink link='/#contact' text='Contact' />
+            <NavLink link='/#blog' text='Blog' />
+
+
         </div>
     )
 }

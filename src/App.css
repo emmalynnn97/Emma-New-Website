@@ -23,6 +23,13 @@ textarea{
   padding:.25em .25em !important;
 
 }
+form h3{
+  display:none;
+}
+.blog-content{
+  background-color:#FFDEFF;
+  padding:1em 0;
+}
 .blog-content h1, .blog-content h2 {
   margin-left:1em;
   margin-top:1em;

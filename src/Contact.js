@@ -79,6 +79,9 @@ export default function Contact() {
                         cursor: 'pointer',
                         transition: '.2s ease',
                     }} type="submit" />
+                <h3>
+                    Thank you for contacting me, I will try and get back to you via email in a timely manner
+                </h3>
             </form>
         </div>
 
