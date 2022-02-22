@@ -18,7 +18,7 @@ const CaseStudies = () => {
                 }}
             >
                 <CaseStudy
-                    description='A custom WordPress theme which served to aid in a rebrand.'
+                    description='A custom WordPress theme which served to aid in a rebrand for the largest ice cream cone manufacturer in the world.'
                     image='https://imgix.cosmicjs.com/315afb00-c73d-11ea-b44f-f5c7da208e23-business-code-coding-computer-270360.jpg'
                     title='Rebranding the Ice Cream Cone'
                     link='/JoyCone'
