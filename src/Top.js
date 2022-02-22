@@ -7,10 +7,9 @@ const Top = () => {
     return (
         <div
             id='#top'
-            className='top-container'
+            className='top-container page'
             style={{
                 display: 'flex',
-                paddingTop: 70,
                 height: '75vh',
                 alignItems: 'center',
                 justifyContent: 'center',

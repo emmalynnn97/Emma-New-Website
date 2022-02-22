@@ -23,6 +23,7 @@ textarea{
   padding:.25em .25em !important;
 
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,6 +35,9 @@ a{
 }
 button:hover, input[type="submit"]:hover{
   transform:scale(1.06);
+}
+.page{
+  padding-top:100px;
 }
 .post-card > button:hover{
   background:'white'
