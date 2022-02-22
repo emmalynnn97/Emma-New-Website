@@ -1,5 +1,5 @@
 import React from 'react'
-const Hero = ({ url, client }) => {
+const Hero = ({ url }) => {
     const heroStyle = {
         height: '87.5vh',
         width: '100%',
@@ -13,9 +13,7 @@ const Hero = ({ url, client }) => {
     }
 
     return (
-        <div style={heroStyle}>
-            <h1>Case Study:<br />{client}</h1>
-        </div>
+        <div style={heroStyle} />
     )
 }
 export default Hero
