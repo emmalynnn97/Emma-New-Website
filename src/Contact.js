@@ -33,12 +33,13 @@ export default function Contact() {
                     </div>
                     <div
                         style={{ display: 'flex', flexDirection: 'column' }}>
-                        <label>Email Address</label>
+                        <label>Email Address <span style={{ color: 'red' }}>*</span></label>
                         <input
                             value={inputs.email}
                             onChange={handleInputChange}
                             name='email'
                             type="text"
+                            required
                         />
                     </div>
 

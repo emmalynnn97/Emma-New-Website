@@ -63,6 +63,9 @@ button:hover, input[type="submit"]:hover{
   .challenge, .solution{
     flex-direction:column;
   }
+  .hero{
+    height:60vh !important;
+  }
   .case-study-content{
     width:75%;
   }

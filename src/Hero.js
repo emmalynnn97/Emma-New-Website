@@ -1,7 +1,7 @@
 import React from 'react'
 const Hero = ({ url }) => {
     const heroStyle = {
-        height: '87.5vh',
+        height: '66vh',
         width: '100%',
         backgroundImage: `url(${url})`,
         backgroundSize: 'cover',
@@ -13,7 +13,7 @@ const Hero = ({ url }) => {
     }
 
     return (
-        <div style={heroStyle} />
+        <div className='hero' style={heroStyle} />
     )
 }
 export default Hero
