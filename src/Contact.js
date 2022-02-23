@@ -6,7 +6,7 @@ export default function Contact() {
     const isDesktop = !useMediaQuery('(max-width:500px)')
     const [bgColor, setBgColor] = useState('#FFB9F0')
     return (
-        <div id='contact' className='form-container' style={{ width: '100%', height: '75vh', background: '#FFF1FC', padding: '1em 0' }}>
+        <div id='contact' className='form-container' style={{ width: '100%', height: '100vh', background: '#FFF1FC', padding: '1em 0' }}>
             <form
                 onSubmit={handleSubmit}
                 style={{

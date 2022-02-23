@@ -3,7 +3,7 @@ import CaseStudy from './CaseStudy'
 const CaseStudies = () => {
     return (
         <>
-            <h2 id='case-study-top' style={{ paddingTop: '1em', background: '#fdf', textAlign: 'center' }}>Case Studies</h2>
+            <h2 id='case-study-top' style={{ paddingTop: '2em', background: '#fdf', textAlign: 'center' }}>Case Studies</h2>
             <div
                 className='case-study-container'
                 style={{

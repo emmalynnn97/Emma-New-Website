@@ -3,7 +3,7 @@ import BlogPost from './BlogPost'
 const BlogPosts = () => {
     return (
         <>
-            <h2 id='blog' style={{ paddingTop: '1em', backgroundColor: '#FFDEFF', textAlign: 'center' }}>Blog Posts</h2>
+            <h2 id='blog' style={{ paddingTop: '2em', backgroundColor: '#FFDEFF', textAlign: 'center' }}>Blog Posts</h2>
             <div
                 className='blog-posts-container'
                 style={{
