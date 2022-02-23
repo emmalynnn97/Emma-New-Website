@@ -1,5 +1,6 @@
 {
   "name": "emma-new-website",
+  "homepage":"https://emmalynnn.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

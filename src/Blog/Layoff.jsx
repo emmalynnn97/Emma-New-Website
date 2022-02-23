@@ -17,7 +17,7 @@ const Layoff = () => {
                 <h2>What I am doing to move forward</h2>
                 <p>Depending on the industry you are in, there are many websites to apply for jobs and careers, such as ZipRecruiter, Linkedin, Angie's List, <br/>and many others. I updated my Linkedin profile and resume to highlight all of my relevant talents and skills,<br/>and applied for a large number of jobs via ZipRecruiter, or Linkedin. </p>
                 <h2>What am I doing to occupy my time during my job hunt?</h2>
-                <p>I am approaching the free time I have as a result of being furloughed as a job in itself. I apply to <br/>at least 25 jobs daily, and have several technical recruiters that I am working with to find a position that fits <br/> me and my particular skillset. I am also utilizing this time to build out my portfolio by working on personal projecdts.<br/>
+                <p>I am approaching the free time I have as a result of being furloughed as a job in itself. I apply to <br/>at least 25 jobs daily, and have several technical recruiters that I am working with to find a position that fits <br/> me and my particular skillset. I am also utilizing this time to build out my portfolio by working on personal projects.<br/>
                 I also do 2 to 3 video calls or phone calls a day with different hiring managers from various companies.
                 </p>
                 <h2>A layoff can be a net positive</h2>
